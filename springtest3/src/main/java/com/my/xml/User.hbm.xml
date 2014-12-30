@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.my.xml">
+<!-- class元素是指定的类与表的对应关系 -->
+<class name="User" table="b_user"
+mutable="true" dynamic-update="true">
+<id name="id" type="integer" column="id_">
+</id>
+
+<!-- 可以不指定type, column, length等属性，都会有默认值 -->
+<property name="name" type="string">
+</property>
+<property name="birthday" type="date"></property>
+
+</class>
+</hibernate-mapping>
